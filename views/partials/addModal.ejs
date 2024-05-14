@@ -1,0 +1,52 @@
+<!-- Modal -->
+<div class="modal fade modal-lg" id="addModal" tabindex="-1" role="dialog" aria-labelledby="modalTitleId"
+	aria-hidden="true">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="modalTitleId">
+					Add Bookmark
+				</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+
+				<div class="mb-3">
+					<label for="" class="form-label">Name</label>
+					<input type="text" class="form-control" name="" id="bmNameAdd" aria-describedby="helpId" placeholder="Name" />
+				</div>
+
+				<div class="mb-3">
+					<label for="" class="form-label">URL</label>
+					<input type="text" class="form-control" name="" id="bmURLAdd" aria-describedby="helpId" placeholder="URL" />
+				</div>
+
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+					Close
+				</button>
+				<button type="button" class="btn btn-primary"
+					onclick="saveBookmark(document.getElementById('bmNameAdd').value, document.getElementById('bmURLAdd').value)">Add</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	var modalId = document.getElementById('modalId');
+
+	modalId.addEventListener('show.bs.modal', function (event) {
+		// Button that triggered the modal
+		let button = event.relatedTarget;
+		// Extract info from data-bs-* attributes
+		let recipient = button.getAttribute('data-bs-whatever');
+
+		// Use above variables to manipulate the DOM
+	});
+</script>
+
+
+</body>
+
+</html>

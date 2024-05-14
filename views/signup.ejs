@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Signup form</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/stylesheets/custom.css">
+    <!-- Favicon and touch icons -->
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+</head>
+
+<body>
+    <div class="container ">
+        <div class="row">
+            <div class="login-container col-lg-4 col-md-6 col-sm-8 col-xs-12">
+                <div class="login-title text-center">
+                    <h2><span>Noroff<strong> TDD</strong></span></h2>
+                </div>
+                <div class="login-content">
+                    <div class="login-header ">
+                        <h3><strong>Signup</strong></h3>
+                        <h5>Please enter your details</h5>
+                    </div>
+                    <div class="login-body">
+                        <form role="form" action="" method="post" class="login-form">
+                            <div class="form-group ">
+                                <div class="pos-r">
+                                    <input id="form-name" type="text" name="form-user" placeholder="Name"
+                                        class="form-username form-control">
+                                    <i class="fa fa-user"></i>
+                                </div>
+                            </div>
+                            <div class="form-group mt-2">
+                                <div class="pos-r">
+                                    <input id="form-surname" type="text" name="form-surname" placeholder="Surname"
+                                        class="form-username form-control">
+                                    <i class="fa fa-user"></i>
+                                </div>
+                            </div>
+                            <div class="form-group mt-2">
+                                <div class="pos-r">
+                                    <input id="form-username" type="text" name="form-username" placeholder="Username"
+                                        class="form-username form-control">
+                                    <i class="fa fa-user"></i>
+                                </div>
+                            </div>
+                            <div class="form-group mt-2">
+                                <div class="pos-r">
+                                    <input id="form-password" type="password" name="form-password"
+                                        placeholder="Password" class="form-password form-control">
+                                    <i class="fa fa-lock"></i>
+                                </div>
+                            </div>
+                            <div class="form-group mt-2">
+                                <div class="pos-r">
+                                    <input id="form-password2" type="password" name="form-password"
+                                        placeholder="Confirm Password" class="form-password form-control">
+                                    <i class="fa fa-lock"></i>
+                                </div>
+                            </div>
+
+                        </form>
+                        <div class="form-group mt-3">
+                            <button class="btn btn-noroff form-control"
+                                onclick="register(document.getElementById('form-name').value, document.getElementById('form-surname').value, document.getElementById('form-username').value, document.getElementById('form-password').value)"><strong>Create</strong></button>
+                        </div>
+
+                    </div> <!-- end  login-body -->
+                </div><!-- end  login-content -->
+                <div class="login-footer text-center template">
+                    <h5>Have an account?<a href="/" class="bold"> Login </a> </h5>
+
+                </div>
+            </div> <!-- end  login-container -->
+
+        </div>
+    </div><!-- end container -->
+    <script src="javascripts/custom.js"></script>
+</body>
+
+</html>

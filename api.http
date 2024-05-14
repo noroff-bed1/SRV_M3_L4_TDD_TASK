@@ -1,0 +1,28 @@
+post http://localhost:3000/users
+Content-Type: application/json
+
+{
+		"firstname": "Teacher",
+		"lastname": "Noroff",
+		"username": "teacher007",
+		"password": "asecret"
+}
+
+###
+post http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+		"username": "teacher007",
+		"password": "asecret"
+}
+
+###
+put http://localhost:3000/bookmarks/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ0ZWFjaGVyMDA3IiwiaWF0IjoxNzE1NjkyOTc1LCJleHAiOjE3MTU3MDAxNzV9.n7uH0jFcr8WxudRP_MH1PhnsCUVxDaD34CPSc_noVmI
+Content-Type: application/json
+
+{
+	"Name":"test",
+	"URL": "sdf"
+}

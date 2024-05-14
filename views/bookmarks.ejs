@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Table</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+	<link rel="stylesheet" href="stylesheets/custom.css">
+	<!-- Favicon and touch icons -->
+	<link rel="shortcut icon" href="assets/ico/favicon.png">
+
+</head>
+
+<body>
+	<div class="container ">
+		<div class="row">
+			<div class="login-container col-lg-10 col-md-6 col-sm-8 col-xs-12">
+				<div class="login-title text-center">
+					<h2><span>Noroff<strong> TDD</strong></span></h2>
+				</div>
+				<div class="login-content p-4">
+					<button class="btn btn-warning m-2" onclick="addBookmark()">Add</button>
+					<div class="table-responsive">
+						<table class="table table-borderless table-primary align-middle">
+							<thead class="table-dark text-center">
+								<tr>
+									<th>Id</th>
+									<th>Name</th>
+									<th>Url</th>
+									<th>Options</th>
+								</tr>
+							</thead>
+							<tbody class="table-group-divider">
+								<%bookmarks.forEach(item=> {%>
+									<tr class="table-primary">
+
+										<td scope="row">
+											<%=item.id%>
+										</td>
+										<td>
+											<%=item.Name%>
+										</td>
+										<td><a href="<%item.url%>">
+												<%=item.url%>
+											</a></td>
+										<td>
+											<button class="btn btn-success" onclick="editBookmark('<%=item.id%>')"><i
+													class="fa-solid fa-pen-to-square"></i></button>
+											<button class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
+										</td>
+
+									</tr>
+									<%})%>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div> <!-- end  login-container -->
+		</div>
+	</div><!-- end container -->
+	<%- include('./partials/editModal') %>
+		<%- include('./partials/addModal') %>
+
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+			<script src="javascripts/custom.js"></script>
+</body>
+
+</html>

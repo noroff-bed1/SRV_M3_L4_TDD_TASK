@@ -1,0 +1,155 @@
+body {
+	background: url(http://images.restapi.co.za/apps/background2.jpg) #132533 no-repeat center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	height: 100vh;
+}
+
+thead {
+	background: rgba(0, 0, 0, 0.7);
+}
+tr,
+td {
+	background: rgba(0, 0, 0, 0.7) !important;
+	color: white !important;
+	border: solid rgb(81, 81, 81) 1px;
+}
+
+tr:nth-child(even) {
+	background-color: #8d0808 !important;
+}
+
+tr:hover {
+	background-color: white !important;
+}
+
+.login-container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.login-container .login-content {
+	background: rgba(0, 0, 0, 0.4);
+}
+.pos-r {
+	position: relative;
+}
+.login-container .login-header {
+	padding: 10px 30px;
+}
+.login-container,
+.login-container a,
+.login-container input {
+	color: #ffffff;
+}
+.login-container .login-title span {
+	padding: 10px 20px;
+	display: inline-block;
+	margin-bottom: 20px;
+	text-shadow: -1px 1px 1px rgb(17, 42, 51);
+}
+
+.btn-noroff {
+	--bs-btn-color: #fff;
+	--bs-btn-bg: #ff7474;
+	--bs-btn-border-color: #ff7474;
+	--bs-btn-hover-color: #fff;
+	--bs-btn-hover-bg: #f62b2b;
+	--bs-btn-hover-border-color: #ff7474;
+	--bs-btn-focus-shadow-rgb: 49, 132, 99;
+	--bs-btn-active-color: #fff;
+	--bs-btn-active-bg: #f62b2b;
+	--bs-btn-active-border-color: #f62f2f;
+	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+	--bs-btn-disabled-color: #fff;
+	--bs-btn-disabled-bg: #ff7474;
+	--bs-btn-disabled-border-color: #4f0101;
+}
+
+.login-container .login-title span strong {
+	color: #ff7474;
+}
+.login-container .login-body {
+	padding: 30px 30px;
+}
+.login-container .login-body input.form-control {
+	background: rgba(0, 0, 0, 0.7);
+	color: white;
+	height: 50px;
+	border-radius: 0;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	border: none;
+	border-left: 3px solid transparent;
+	font-size: 16px;
+	-o-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.login-container .login-body input.form-control::placeholder {
+	color: rgba(211, 211, 211, 0.513);
+}
+.login-container .login-body input.form-control:focus {
+	border-color: #ff7474;
+}
+.login-container .login-body input.form-control + i {
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	font-size: 20px;
+	color: rgb(24, 80, 103);
+	-o-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.login-container .login-body input.form-control:focus + i {
+	color: #4bccff;
+}
+.login-container .login-body button {
+	height: 50px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	font-size: 20px;
+}
+.login-container .login-footer {
+	padding: 20px 0;
+}
+.template h5 a {
+	color: #ff7474;
+}
+
+@media only screen and (max-width: 600px), screen and (max-height: 610px) {
+	.login-container {
+		padding: 0px;
+	}
+	.login-container .login-title span {
+		padding: 0px;
+		margin-bottom: 10px;
+	}
+	.login-container .login-content {
+		background: none;
+		-moz-box-shadow: none;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+	}
+	.login-header {
+		display: none;
+	}
+	.login-container .login-body {
+		padding: 10px 10px;
+	}
+	.login-container .login-footer {
+		padding: 0;
+	}
+}
+@media only screen and (max-height: 400px) {
+	.login-container {
+		position: static;
+		transform: none;
+		padding: 0;
+	}
+}
+
